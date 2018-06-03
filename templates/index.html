@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Report</title>
+</head>
+<body>
+    <h1>Links</h1>
+    <p>{{ urls|length }} links</p>
+<ol align="left">
+{% set counter = 0 -%}
+{% for url in urls -%}
+<li><a href="{{ url }}">{{ url }}</a></li>
+{% set counter = counter + 1 -%}
+{% endfor -%}
+</ol>
+
+    <h1>Good Status</h1>
+    <p>{{ good_status|length }} links</p>
+<ol align="left">
+{% set counter = 0 -%}
+{% for url in good_status -%}
+<li><a href="{{ url }}">{{ url }}</a></li>
+{% set counter = counter + 1 -%}
+{% endfor -%}
+</ol>
+    <h1>Bad Status</h1>
+    <p>{{ bad_status|length }} links</p>
+<ol align="left">
+{% set counter = 0 -%}
+{% for url in bad_status -%}
+<li><a href="{{ url }}">{{ url }}</a></li>
+{% set counter = counter + 1 -%}
+{% endfor -%}
+</ol>
+    <h1>Bad Context</h1>
+    <p>{{ bad_context|length }} links</p>
+<ol align="left">
+{% set counter = 0 -%}
+{% for url in bad_context -%}
+<li><a href="{{ url }}">{{ url }}</a></li>
+{% set counter = counter + 1 -%}
+{% endfor -%}
+</ol>
+
+</body>
+</html>
