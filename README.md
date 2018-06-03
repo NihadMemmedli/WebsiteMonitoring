@@ -13,8 +13,8 @@ Details:
 • The “content requirement” can for example be just a simple string that must be included in the
 response received from the server, e.g. one rule might be that the page at the URL
 “http://www.foobar.com/login” must contain the text “Please login:”.
-• The checking period must be configurable via a command-line option or by a setting in the
-configuration file.
-• The log file must contain the checked URLs, their status and the response times.
+• The checking period configurable by a setting in the
+configuration file.(config.config.py)
+• The log file must contain the checked URLs, their status and the response times. (logs folder)
 • The program must distinguish between connection level problems (e.g. the web site is down)
-and content problems (e.g. the content requirements were not fulfilled).
+and content problems (e.g. the content requirements were not fulfilled). (log file or report file show difference)
