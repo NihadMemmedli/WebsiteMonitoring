@@ -33,7 +33,6 @@ class Html_Generator:
         fname = "report/report.html"
         urls = ['http://example.com/1', 'http://example.com/2', 'http://example.com/3']
         context = {
-            'urls': urls,
             'good_status': good_status,
             'bad_status' : bad_status,
             'bad_context': bad_context
