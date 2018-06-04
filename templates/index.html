@@ -5,18 +5,8 @@
     <title>Report</title>
 </head>
 <body>
-    <h1>Links</h1>
-    <p>{{ urls|length }} links</p>
-<ol align="left">
-{% set counter = 0 -%}
-{% for url in urls -%}
-<li><a href="{{ url }}">{{ url }}</a></li>
-{% set counter = counter + 1 -%}
-{% endfor -%}
-</ol>
-
-    <h1>Good Status</h1>
-    <p>{{ good_status|length }} links</p>
+   <h1>Good Status</h1>
+   <p>{{ good_status|length }} links</p>
 <ol align="left">
 {% set counter = 0 -%}
 {% for url in good_status -%}
